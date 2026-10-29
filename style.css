@@ -42,7 +42,7 @@ h1, h2 {
   line-height: 1.4;
 }
 
-h1 { font-size: 34px; margin: 0 0 8px; }
+h1 { font-size: clamp(26px, 7.4vw, 34px); margin: 0 0 8px; line-break: strict; }
 h2 { font-size: 20px; margin: 48px 0 12px; padding-top: 24px; border-top: 1px solid var(--hairline); }
 
 .lead { color: var(--ink-soft); margin: 0 0 8px; }
