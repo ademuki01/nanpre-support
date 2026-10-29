@@ -1,0 +1,59 @@
+:root {
+  --paper: #f3efe6;
+  --sheet: #fbf9f4;
+  --ink: #1a1814;
+  --ink-soft: #7d776b;
+  --hairline: #dcd5c6;
+  --ai: #24406b;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #0f0e0c;
+    --sheet: #1a1917;
+    --ink: #ece6d9;
+    --ink-soft: #8e887c;
+    --hairline: #35322d;
+    --ai: #8daee0;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.85;
+  -webkit-text-size-adjust: 100%;
+}
+
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 56px 24px 80px;
+}
+
+h1, h2 {
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+h1 { font-size: 34px; margin: 0 0 8px; }
+h2 { font-size: 20px; margin: 48px 0 12px; padding-top: 24px; border-top: 1px solid var(--hairline); }
+
+.lead { color: var(--ink-soft); margin: 0 0 8px; }
+
+nav { margin: 0 0 40px; font-size: 14px; }
+nav a { margin-right: 20px; }
+
+a { color: var(--ai); text-underline-offset: 3px; }
+
+dl { margin: 0; }
+dt { font-weight: 600; margin-top: 20px; }
+dd { margin: 4px 0 0; color: var(--ink); }
+
+.date { margin-top: 56px; color: var(--ink-soft); font-size: 14px; }
